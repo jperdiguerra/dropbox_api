@@ -86,6 +86,7 @@ module DropboxApi::Errors
   class SharedLinkAlreadyExistsError < BasicError; end
   class TeamFolderError < BasicError; end
   class TeamPolicyDisallowsMemberPolicyError < BasicError; end
+  class TooLargeError < BasicError; end
   class TooManyFilesError < BasicError; end
   class TooManyMembersError < BasicError; end
   class TooManyPendingInvitesError < BasicError; end
