@@ -33,6 +33,7 @@ module DropboxApi::Errors
   class CantMoveFolderIntoItselfError < BasicError; end
   class CantNestSharedFolderError < BasicError; end
   class CantShareOutsideTeamError < BasicError; end
+  class CantTransferOwnershipError < BasicError; end
   class ChunkedUploaderError < BasicError; end
   class ContainsSharedFolderError < BasicError; end
   class ConversionError < BasicError; end
@@ -40,6 +41,7 @@ module DropboxApi::Errors
   class CursorNotClosedError < BasicError; end
   class DisallowedNameError < BasicError; end
   class DisallowedSharedLinkPolicyError < BasicError; end
+  class DuplicatedOrNestedPathsError < BasicError; end
   class DownloadFailedError < BasicError; end
   class EmailUnverifiedError < BasicError; end
   class FileAncestorConflictError < BasicError; end
@@ -55,6 +57,7 @@ module DropboxApi::Errors
   class InsideSharedFolderError < BasicError; end
   class InsufficientPlanError < BasicError; end
   class InsufficientSpaceError < BasicError; end
+  class InsufficientQuotaError < BasicError; end
   class InternalError < BasicError; end
   class InvalidCommentError < BasicError; end
   class InvalidCopyReferenceError < BasicError; end
