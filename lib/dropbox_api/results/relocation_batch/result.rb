@@ -2,7 +2,7 @@ module DropboxApi::Results::RelocationBatch
   class Result < DropboxApi::Results::Base
     def entries
       @entries ||= @data["entries"].map do |entry|
-        DropboxApi::Results::RelocationBatch::ResultData.new entry
+        DropboxApi::Metadata::Resource.new(entry['metadata'])
       end
     end
   end
